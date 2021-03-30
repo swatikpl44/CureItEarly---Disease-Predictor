@@ -5,8 +5,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CureItEarly - A Disease Predictor</title>
+
+    <!-- CSS  -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="./static/css/materialize.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+    <link
+      href="./static/css/style.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
   </head>
   <body>
-    Initial Structure
+    <nav class="red lighten-1" role="navigation">
+      <div class="nav-wrapper container">
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">Made By - Swatik Paul</a></li>
+        </ul>
+      </div>
+    </nav>
+  
+  
+    <div class="section no-pad-bot" id="index-banner">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text">Disease Predictor</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Enter the symptoms that you have been experiencing lately
+          <br>
+          </h5>
+        </div>
+  
+        <div class="row">
+      <form action='/predict' method="post" class="col s12">
+        <div class="row">
+          <div class="input-field col s4">
+              <label for="s1"><b>Symptom-1</b></label>
+              <br>
+            <input id="s1" name="Symptom1" placeholder="Fever"  type="text" class="validate">
+          </div>
+          <div class="input-field col s4">
+  
+            <label for="s2"><b> Symptom-2</b></label>
+              <br>
+            <input id="s2" name="Symptom2" placeholder="Itching"  type="text" class="validate">
+          </div>
+  
+          <div class="input-field col s4">
+              <label for="s3"><b>Symptom-3</b></label>
+              <br>
+            <input id="s3" name="Symptom3" placeholder="Dizziness" type="text" class="validate">
+          </div>
+        </div>
+  
+        <div class="row center">
+            <button type="submit" class="btn-large waves-effect waves-light teal">Predict</button>
+        </div>
+      </form>
+        </div>
+  
+        <br>
+          {{pred}}
+        <br>
+  
+      </div>
+    </div>
+      <br><br>
+    </div>
+    </div>>
+  
+    <footer class="page-footer red">
+      <div class="container">
+        <div class="row">
+          <div class="col l7 s12">
+            <h5 class="white-text">About</h5>
+            <p class="grey-text text-lighten-4">CureItEarly - A Disease Predictor, takes the symptoms experienced by the user as input and predicts the disease using a machine learning algorithm. 
+            This predictor has been tested and is accurate as well as efficient. This web-application could help us save time and can be useful in case of emergencies. Being in initial phase, it should not be considered as an alternative for the prevailing medicinal practices and assessments. So, it is recommended that proper consultancy must be done by the user with a professional before consuming medicines based on disease predicted by our application.</p>
+  
+          </div>
+          <div class="col l2 s12"></div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Connect with me</h5>
+            <ul>
+              <li><a class="white-text" href="#">GitHub</a></li>
+              <li><a class="white-text" href="#">Linkedin</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        Made with <a class="orange-text text-lighten-3" href="#">love</a>
+        </div>
+      </div>
+    </footer>
+  
+  
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="./static/js/materialize.js"></script>
+    <script src="./static/js/init.js"></script>
+  
+    </body>
   </body>
 </html>
