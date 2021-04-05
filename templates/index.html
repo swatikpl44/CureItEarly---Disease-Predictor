@@ -23,87 +23,262 @@
       rel="stylesheet"
       media="screen,projection"
     />
+
+    <!-- Font Style -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
   </head>
   <body>
-    <nav class="red lighten-1" role="navigation">
-      <div class="nav-wrapper container">
-        <ul class="right hide-on-med-and-down">
+    <nav class="teal lighten-1" role="navigation">
+      <div class="nav-wrapper">
+        <div class="logo-container">
+          <a href="http://127.0.0.1:5000/" class="logo"> Cure It Early</a>
+        </div>
+        <!-- <ul class="right hide-on-med-and-down">
           <li><a href="#">Made By - Swatik Paul</a></li>
-        </ul>
+        </ul> -->
       </div>
     </nav>
   
+    <datalist id="symptoms">
+      <option value="itching">
+      <option value="skin_rash">
+      <option value="nodal_skin_eruptions">
+      <option value="continuous_sneezing">
+      <option value="shivering">
+      <option value="chills">
+      <option value="joint_pain">
+      <option value="stomach_pain">
+      <option value="acidity">
+      <option value="ulcers_on_tongue">
+      <option value="muscle_wasting">
+      <option value="vomiting">
+      <option value="burning_micturition">
+      <option value="spotting_ urination">
+      <option value="fatigue">
+      <option value="weight_gain">
+      <option value="anxiety">
+      <option value="cold_hands_and_feets">
+      <option value="mood_swings">
+      <option value="weight_loss">
+      <option value="restlessness">
+      <option value="lethargy">
+      <option value="patches_in_throat">
+      <option value="irregular_sugar_level">
+      <option value="cough">
+      <option value="high_fever">
+      <option value="sunken_eyes">
+      <option value="breathlessness">
+      <option value="sweating">
+      <option value="dehydration">
+      <option value="indigestion">
+      <option value="headache">
+      <option value="yellowish_skin">
+      <option value="dark_urine">
+      <option value="nausea">
+      <option value="loss_of_appetite">
+      <option value="pain_behind_the_eyes">
+      <option value="back_pain">
+      <option value="constipation">
+      <option value="abdominal_pain">
+      <option value="diarrhoea">
+      <option value="mild_fever">
+      <option value="yellow_urine">
+      <option value="yellowing_of_eyes">
+      <option value="acute_liver_failure">
+      <option value="fluid_overload">
+      <option value="swelling_of_stomach">
+      <option value="swelled_lymph_nodes">
+      <option value="malaise">
+      <option value="blurred_and_distorted_vision">
+      <option value="phlegm">
+      <option value="throat_irritation">
+      <option value="redness_of_eyes">
+      <option value="sinus_pressure">
+      <option value="runny_nose">
+      <option value="congestion">
+      <option value="chest_pain">
+      <option value="weakness_in_limbs">
+      <option value="fast_heart_rate">
+      <option value="pain_during_bowel_movements">
+      <option value="pain_in_anal_region">
+      <option value="bloody_stool">
+      <option value="irritation_in_anus">
+      <option value="neck_pain">
+      <option value="dizziness">
+      <option value="cramps">
+      <option value="bruising">
+      <option value="obesity">
+      <option value="swollen_legs">
+      <option value="swollen_blood_vessels">
+      <option value="puffy_face_and_eyes">
+      <option value="enlarged_thyroid">
+      <option value="brittle_nails">
+      <option value="swollen_extremeties">
+      <option value="excessive_hunger">
+      <option value="extra_marital_contacts">
+      <option value="drying_and_tingling_lips">
+      <option value="slurred_speech">
+      <option value="knee_pain">
+      <option value="hip_joint_pain">
+      <option value="muscle_weakness">
+      <option value="stiff_neck">
+      <option value="swelling_joints">
+      <option value="movement_stiffness">
+      <option value="spinning_movements">
+      <option value="loss_of_balance">
+      <option value="unsteadiness">  
+      <option value="weakness_of_one_body_side">
+      <option value="loss_of_smell">
+      <option value="bladder_discomfort">
+      <option value="foul_smell_of urine">
+      <option value="continuous_feel_of_urine">
+      <option value="passage_of_gases">
+      <option value="internal_itching">
+      <option value="toxic_look_(typhos)">
+      <option value="depression">
+      <option value="irritability">
+      <option value="muscle_pain">
+      <option value="altered_sensorium">
+      <option value="red_spots_over_body">
+      <option value="belly_pain">
+      <option value="abnormal_menstruation">
+      <option value="dischromic _patches">
+      <option value="watering_from_eyes">
+      <option value="increased_appetite">
+      <option value="polyuria">
+      <option value="mucoid_sputum">
+      <option value="rusty_sputum">
+      <option value="lack_of_concentration">
+      <option value="visual_disturbances">
+      <option value="receiving_blood_transfusion">
+      <option value="receiving_unsterile_injections">
+      <option value="coma">
+      <option value="stomach_bleeding">
+      <option value="distention_of_abdomen">
+      <option value="history_of_alcohol_consumption">
+      <option value="fluid_overload">
+      <option value="blood_in_sputum">
+      <option value="prominent_veins_on_calf">
+      <option value="palpitations">
+      <option value="painful_walking">
+      <option value="pus_filled_pimples">
+      <option value="blackheads">
+      <option value="scurring">
+      <option value="skin_peeling">
+      <option value="silver_like_dusting">
+      <option value="small_dents_in_nails">
+      <option value="inflammatory_nails">
+      <option value="blister">
+      <option value="red_sore_around_nose">
+      <option value="yellow_crust_ooze">   
+    </datalist>
   
-    <div class="section no-pad-bot" id="index-banner">
-      <div class="container">
-        <br><br>
-        <h1 class="header center teal-text">Disease Predictor</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">Enter the symptoms that you have been experiencing lately
-          <br>
-          </h5>
+    <div class = "row">
+      <div class = "col l5 s12">
+        <div>
+          <img class = "image" src="{{url_for('static', filename='online-healthcare.jpg')}}"/>
         </div>
-  
-        <div class="row">
-      <form action='/predict' method="post" class="col s12">
+      </div>
+
+    <div class="col l7 s12" id="index-banner">
+      <div class="container content">
+        <h3 class="center teal-text app-name">Cure It Early</h3>
+        <div class="row center message">
+          <h5 class="col s12 light form-detail">Enter the symptoms that you have been experiencing lately </h5>
+        </div>
+
+        <br />
+        <div class="alert">
+          Try to enter as many (at most 6) symptoms as possible.
+        </div>
+
+        <br />
+        <div class="row symptoms">
+      <form action='/predict' method="post" class="col s12" autocomplete="off">
         <div class="row">
           <div class="input-field col s4">
               <label for="s1"><b>Symptom-1</b></label>
               <br>
-            <input id="s1" name="Symptom1" placeholder="Fever"  type="text" class="validate">
+            <input list="symptoms" id="s1" name="Symptom1" placeholder="Fever"  type="text" class="validate">
           </div>
           <div class="input-field col s4">
   
             <label for="s2"><b> Symptom-2</b></label>
               <br>
-            <input id="s2" name="Symptom2" placeholder="Itching"  type="text" class="validate">
+            <input list="symptoms" id="s2" name="Symptom2" placeholder="Itching"  type="text" class="validate">
           </div>
   
           <div class="input-field col s4">
               <label for="s3"><b>Symptom-3</b></label>
               <br>
-            <input id="s3" name="Symptom3" placeholder="Dizziness" type="text" class="validate">
+              <input list="symptoms" id="s3" name="Symptom3" placeholder="Dizziness" type="text" class="validate">
+          </div>
+        </div>
+
+        <div class="row symptoms">
+          <div class="input-field col s4">
+              <label for="s4"><b>Symptom-4</b></label>
+              <br>
+            <input list="symptoms" id="s4" name="Symptom4" placeholder="Runny Nose"  type="text" class="validate">
+          </div>
+          <div class="input-field col s4">
+  
+            <label for="s5"><b> Symptom-5</b></label>
+              <br>
+            <input list="symptoms" id="s5" name="Symptom5" placeholder="Cold Hands and Feets"  type="text" class="validate">
+          </div>
+  
+          <div class="input-field col s4">
+              <label for="s6"><b>Symptom-6</b></label>
+              <br>
+              <input list="symptoms" id="s6" name="Symptom6" placeholder="Vomiting" type="text" class="validate">
           </div>
         </div>
   
         <div class="row center">
-            <button type="submit" class="btn-large waves-effect waves-light teal">Predict</button>
+            <button type="submit" class="btn-large waves-effect waves-light button">Predict</button>
         </div>
       </form>
         </div>
   
-        <br>
+         <div class = "prediction">
           {{pred}}
-        <br>
+         </div>
   
       </div>
     </div>
+  </div>
       <br><br>
-    </div>
-    </div>>
   
-    <footer class="page-footer red">
-      <div class="container">
+    <footer class="page-footer teal">
         <div class="row">
           <div class="col l7 s12">
+            <div class = "about-section">
             <h5 class="white-text">About</h5>
-            <p class="grey-text text-lighten-4">CureItEarly - A Disease Predictor, takes the symptoms experienced by the user as input and predicts the disease using a machine learning algorithm. 
+            <p class="grey-text text-lighten-4"> <a href="http://127.0.0.1:5000/">CureItEarly </a>- A Disease Predictor, takes the symptoms experienced by the user as input and predicts the disease using a machine learning algorithm. 
             This predictor has been tested and is accurate as well as efficient. This web-application could help us save time and can be useful in case of emergencies. Being in initial phase, it should not be considered as an alternative for the prevailing medicinal practices and assessments. So, it is recommended that proper consultancy must be done by the user with a professional before consuming medicines based on disease predicted by our application.</p>
-  
+            </div>
           </div>
-          <div class="col l2 s12"></div>
-          <div class="col l3 s12">
-            <h5 class="white-text">Connect with me</h5>
-            <ul>
-              <li><a class="white-text" href="#">GitHub</a></li>
-              <li><a class="white-text" href="#">Linkedin</a></li>
-            </ul>
+          <div class="col l5 s12">
+            <div class="my-details">
+              <h5 class="white-text">Developed By</h5>
+              <a href="https://in.linkedin.com/in/swatik-paul-1218b3136" target="_blank"> Swatik Paul </a>
+
+              <br />
+              <br />
+              <h5 class="white-text">Connect With Me</h5>
+              <a href="https://github.com/swatikpl44" target="_blank"> Github </a>
+            </div>
           </div>
         </div>
-      </div>
       <div class="footer-copyright">
-        <div class="container">
-        Made with <a class="orange-text text-lighten-3" href="#">love</a>
+        <div class="container copyright">
+          <p>
+            Made with <span class="orange-text text-lighten-3">love.</span>
+            Copyright &copy; 2021 Swatik Paul. All Rights Reserved.
+          </p>
         </div>
       </div>
     </footer>

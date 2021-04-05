@@ -12,3 +12,127 @@
 .icon-block .material-icons {
   font-size: inherit;
 }
+
+.logo-container {
+  padding: 5px 0 0 70px;
+}
+
+.logo {
+  font-family: "Kaushan Script", cursive;
+  font-size: 35px;
+  font-weight: normal;
+  line-height: 48px;
+  margin: 0 0 50px;
+  text-align: center;
+  text-shadow: 1px 1px 2px #082b34;
+}
+
+.image {
+  margin: 27% 18% 0% 18%;
+  width: 90%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 501px) and (max-width: 992px) {
+  .image {
+    margin: 5% 0 0 25%;
+    width: 55%;
+    height: 50%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .image {
+    margin: 8% 0 0 15%;
+    width: 70%;
+    height: 50%;
+  }
+}
+
+.content {
+  margin-top: 5%;
+}
+
+.app-name {
+  letter-spacing: 2px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  margin: 0;
+}
+
+.message {
+  margin: 0;
+}
+
+.alert {
+  padding: 4px;
+  border-radius: 5px;
+  background-color: #014d4e;
+  color: white;
+  text-align: center;
+}
+
+.form-detail {
+  letter-spacing: 2px;
+}
+
+.symptoms {
+  margin: 0.5% 0;
+}
+
+.prediction {
+  width: fit-content;
+  margin: auto;
+  font-size: 15px;
+  word-spacing: 2px;
+  font-family: cursive;
+}
+
+.button {
+  background-color: teal;
+  border-radius: 30px;
+}
+.button:hover {
+  background-color: #014d4e;
+}
+
+.about-section {
+  margin: 3% 3% 1% 15%;
+  letter-spacing: 1px;
+}
+
+.my-details {
+  margin: 3% 1% 1% 50%;
+  letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 501px) and (max-width: 992px) {
+  .about-section {
+    margin: 0 10% 0 10%;
+  }
+
+  .my-details {
+    margin: 0 10% 0 10%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .about-section {
+    margin: 0 6% 0 6%;
+  }
+
+  .my-details {
+    margin: 0 6% 0 6%;
+  }
+}
+
+a {
+  color: white;
+}
+a:hover {
+  color: #014d4e;
+}
+
+.copyright {
+  text-align: center;
+  letter-spacing: 1px;
+}
