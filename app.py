@@ -11,7 +11,8 @@ x_test=test.drop('prognosis',axis=1)
 
 @app.route('/')
 def about():
-  return render_template("index.html")
+    default = ['', '', '', '', '', '']
+    return render_template("index.html", form_values = default)
 
 @app.route('/predict',methods=['POST','GET'])
 def predict():
@@ -19,6 +20,7 @@ def predict():
         col=x_test.columns
         inputt = [str(x) for x in request.form.values()]
 
+        print(inputt)
         b=[0]*132
         for x in range(0,132):
             for y in inputt:
@@ -28,7 +30,8 @@ def predict():
         b=b.reshape(1,132)
         prediction = model.predict(b)
         prediction=prediction[0]
-    return render_template('index.html', pred="The disease predicted for these symptoms is {}.".format(prediction))
+    return render_template('index.html', pred="The disease predicted for these symptoms is {}.".format(prediction), form_values = inputt)
+    
 
 if __name__ == '__main__':
   app.run(debug = True)
